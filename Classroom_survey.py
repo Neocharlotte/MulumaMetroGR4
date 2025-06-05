@@ -16,3 +16,6 @@ def collect_responses(questions, num_participants):
             participant_answers.append(answer)
             all_responses.append(participant_answers)
             return all_responses
+        
+all_responses = []
+
