@@ -9,7 +9,7 @@ questions = [
 def collect_responses(questions, num_participants):
     all_responses = []
     for i in range (num_participants):
-        print(f"\nParticipants {i + 1}, please anser the following questions:")
+        print(f"\nParticipants {i + 1}, please answer the following questions:")
         participant_answers = []
         for q in questions :
             answer = input (q +" ").strip().lower()
