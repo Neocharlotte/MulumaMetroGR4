@@ -1,3 +1,23 @@
+#Lavani
+
+grades = {}  # Dictionary to map student names to their grades
+
+
+def add_student(name):
+    if name in grades:
+        print(f"{name} is already in the gradebook.")
+    else:
+        grades[name] = []
+        print(f"{name} has been added to the gradebook.")
+
+
+def record_grade(name, score):
+    if name not in grades:
+        print(f"{name} is not in the gradebook. Please add them first.")
+    else:
+        grades[name].append(score)
+        print(f"Recorded score {score} for {name}.")
+        
 #NEO
 
 from student_manager import grades
